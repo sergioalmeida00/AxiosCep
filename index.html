@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">BUSCA POR CEP</div>
+            <div class="panel-body">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="form-group col-sm-3">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep">
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <label for="localidade">Localidade</label>
+                            <input type="text" class="form-control" id="localidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro">
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-sm-8">
+                            <label for="logradouro">Logradouro</label>
+                            <input type="text" class="form-control" id="logradouro">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="ibge">Cod.Ibge</label>
+                            <input type="text" class="form-control" id="ibge">
+                        </div>
+                        <div class="form-group col-sm-1">
+                            <label for="uf">UF</label>
+                            <input type="text" class="form-control" id="uf">
+                        </div>
+
+                        <div class="form-group col-sm-1">
+                            <label for="ddd">DDD</label>
+                            <input type="text" class="form-control" id="ddd">
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
