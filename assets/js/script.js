@@ -1,4 +1,14 @@
 const cep = document.querySelector('#cep');
+let cepMask = "";
+// AO EVENTO SER ACIONADO COLOCA A MASCARA NO CEP
+cep.addEventListener("keyup", () => {
+    cepMask = cep.value;
+    if (cepMask) {
+        if (cepMask.length === 8) {
+            cep.value = `${cepMask.substr(0,5)}-${cepMask.substr(5,9)}`;
+        }
+    }
+})
 
 const Storage = {
     get() {
@@ -9,7 +19,6 @@ const Storage = {
         localStorage.setItem('cep', JSON.stringify(cep));
     }
 }
-
 const showData = (result) => {
 
     for (const campo in result) {
